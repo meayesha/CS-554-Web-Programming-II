@@ -1,0 +1,120 @@
+@import "variables"; 
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/bootstrap-grid";
+
+@mixin border-bottom($size) {
+    border-bottom: $size solid #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html{
+    background: $body-background;
+    color: darken($brand-primary, 20%);
+    font-family: $font;
+    font-size: $primary-font-size;
+    background-clip: border-box;
+    text-align: center;
+}
+
+.modal-content{
+    background-color: $modal-color;
+}
+.btn-primary {
+    background-color: $button-color !important;
+    color: $button-text-color;
+    border-color: $body-background;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  .btn-primary:hover {
+    background-color: $button-hover !important;
+    color: $text-color;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  
+  .btn-primary:active{
+      background-color: $button-color !important;
+      color: $text-color;
+      box-shadow: none !important;
+      outline: none !important;
+  } 
+  .btn-primary:focus{
+    background-color: $button-color !important;
+    color: $text-color;
+    box-shadow: none !important;
+    outline: none !important;
+} 
+.btn-primary:active:focus{
+    background-color: $button-color !important;
+    color: $text-color;
+    box-shadow: none !important;
+    outline: none !important;
+} 
+  
+// Sidebar
+.sidebar {
+    padding: 0px;
+    background-color: $body-background;
+}
+.sidebar a {
+    display: block;
+    color: $text-color;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: $body-background;
+    color: $text-color;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: $text-color;
+    color: $card-color;
+  }
+
+
+//cards
+.card {
+    display: inline-block;
+    padding: 12px;
+    max-width: 65%;
+    max-height: 75%;
+    background-color: $card-color;
+
+}
+.card-title{
+    font-size:large;
+    font-weight: bolder;
+    margin-bottom: .12rem;
+    color:$text-color;
+}
+.card-text{
+    color:$text-color;
+}
+.card-body{
+    flex-direction: column;
+}
+figcaption{
+    font-size: x-small;
+    font-weight: bold;
+}
+h2{
+    font-size: small;
+    font-weight: bold;
+}
+.card-img-top {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+

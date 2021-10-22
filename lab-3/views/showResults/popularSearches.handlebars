@@ -1,0 +1,20 @@
+<section>
+    <h1> {{ title }} </h1>
+    <div>
+        <ul>      
+            {{#each showsList}}
+            <li>
+                 <p>{{this}}</p>
+            </li>
+            {{/each}}
+            
+        </ul>
+       </div>     
+        <form class="form" action="/search" method="POST">
+
+        <label> Search Term </label>            
+        <input type = "text" name = "searchTerm" id = "searchTerm"/>
+        <button type = "submit" name = "Submit"> Search </button>
+        
+        </form>
+</section>

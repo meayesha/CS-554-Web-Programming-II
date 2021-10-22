@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "My lab-6 module server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Ayesha Parveen 10471893",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.23.0",
+    "apollo-server-cache-redis": "^1.5.0",
+    "axios": "^0.21.1",
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "flat": "^5.0.2",
+    "graphql": "^15.5.0",
+    "ioredis": "^4.27.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "node-redis": "^0.1.7",
+    "redis": "^3.1.2",
+    "redis-server": "^1.2.2",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "new-lab-6",
+  "version": "1.0.0",
+  "description": "lab 6 module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Ayesha Parveen 10471893",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.24.0",
+    "axios": "^0.21.1",
+    "graphql": "^15.5.0",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
+  }
+}

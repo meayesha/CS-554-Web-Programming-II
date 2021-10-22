@@ -1,0 +1,32 @@
+<h1>
+    {{title}}
+  </h1>
+  <div class="showInfo">
+  <img src="{{image}}" alt={{name}} >
+  </div>
+  <dt>ID</dt>
+    <dd>{{id}}</dd>
+  <dl>
+    <dt>Language</dt>
+    <dd>{{language}}</dd>
+    <dt>Genre</dt>
+    <dd>
+      <ul>
+    {{#each genres}}
+    
+      <li>{{this}}</li>
+     
+    {{/each}}
+     </ul>
+    </dd>
+    <dt>Average Rating</dt>
+    <dd>{{rating}}</dd>
+    <dt>Network</dt>
+    <dd>{{network}}</dd>
+    <dt>Summary</dt>
+    <dd>{{summary}}</dd>
+  </dl>
+  <li>
+      <a href="/">New Search </a> 
+    </li>
+  
